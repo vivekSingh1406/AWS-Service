@@ -27,18 +27,23 @@
 ## Deploy Spring boot application on EC2
 - create EC2 instance(lunch instance)
 - SSH connection command(past in PM file)
-- install git client( project is abilibilation in github, so need to install git client)
-```bash
+- Since the project is hosted on GitHub, install the Git client 
+```
 sudo yum install git -y
 ```
-- clone repository(in a github)
+- Clone the GitHub repository
+```
+git clone ---https-url----
+cd your-repository-name
+```
 - install maven and java(on EC2 machine to build and run)
-```bash
+```
 sudo yum install maven -y
 ```
 - mvc clean package (package project in jar file)
 ```
 java -jar target/project-name
 ```
-- we need to enable the port number
-- Go to machine -> tale public IP address to access our application
+- Go to the Security Group associated with your EC2 instance.
+- Edit Inbound Rules and allow Custom TCP on port 8080 (or whichever your app uses) from Anywhere (0.0.0.0/0).
+- Obtain the public IP address of your EC2 instance and use it to access your application in a web browser
