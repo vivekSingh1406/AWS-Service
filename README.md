@@ -22,3 +22,17 @@
 11. Amazon EKS (Elastic Kubernetes Service) is a managed service for running Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane. EKS is used for orchestrating containerized applications, enabling high availability, scalability, and integration with AWS networking and security services.
 
 12. AWS Fargate is a serverless compute engine for containers that works with both Amazon ECS (Elastic Container Service) and Amazon EKS (Elastic Kubernetes Service). It allows you to run containers without provisioning, configuring, or managing the underlying virtual machines.
+
+
+## Deploy Spring boot application on EC2
+- create EC2 instance(lunch instance)
+- SSH connection command(past in PM file)
+- install git client( project is abilibilation in github, so need to install git client)
+  (sudo yum install git -y)
+- clone repository(in a github)
+- install maven and java(on EC2 machine to build and run)
+  (sudo yum install maven -y) install both
+- mvc clean package (package project in jar file)
+  ( java -jar target/project-name)  run java jar file
+- we need to enable the port number
+- Go to machine -> tale public IP address to access our application
