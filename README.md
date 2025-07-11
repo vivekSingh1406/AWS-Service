@@ -41,7 +41,7 @@ sudo yum install git -y
 git clone ---https-url----
 cd your-repository-name
 ```
-- install maven and java(on EC2 machine to build and run)
+- install maven and java(EC2 machine to build or run application)
 ```
 sudo yum install maven -y
 ```
