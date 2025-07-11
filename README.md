@@ -28,14 +28,17 @@
 - create EC2 instance(lunch instance)
 - SSH connection command(past in PM file)
 - install git client( project is abilibilation in github, so need to install git client)
- ```bash
+```bash
 sudo yum install git -y
 ```
-  (sudo yum install git -y)
 - clone repository(in a github)
 - install maven and java(on EC2 machine to build and run)
-  (sudo yum install maven -y) install both
+```bash
+sudo yum install maven -y
+```
 - mvc clean package (package project in jar file)
-  ( java -jar target/project-name)  run java jar file
+```
+java -jar target/project-name
+```
 - we need to enable the port number
 - Go to machine -> tale public IP address to access our application
