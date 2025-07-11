@@ -25,8 +25,13 @@
 
 
 ## Deploy Spring boot application on EC2
-- create EC2 instance(lunch instance)
-- SSH connection command(past in PM file)
+- Launch EC2 Instance
+- Launch a new EC2 instance (Amazon Linux 2 or Ubuntu preferred)
+- Select a key pair (or create one) for SSH access.
+- Connect to EC2 via SSH(Use the following SSH command to connect to your instance)
+```
+  ssh -i /path/to/your-key.pem ec2-user@<public-ip-address>
+```
 - Since the project is hosted on GitHub, install the Git client 
 ```
 sudo yum install git -y
