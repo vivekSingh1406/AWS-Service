@@ -52,3 +52,29 @@ java -jar target/project-name
 - Go to the Security Group associated with your EC2 instance.
 - Edit Inbound Rules and allow Custom TCP on port 8080 (or whichever your app uses) from Anywhere (0.0.0.0/0).
 - Obtain the public IP address of your EC2 instance and use it to access your application in a web browser
+
+### 1. Set Up AWS S3
+1. **Create an S3 Bucket**:
+    - Log in to your [AWS Management Console](https://aws.amazon.com/console/).
+    - Navigate to **S3** and create a new bucket.
+    - Make sure to note down the **bucket name** and the **region** where the bucket is created.
+
+2. **IAM User & Credentials**:
+    - Create an IAM user with `AmazonS3FullAccess` permissions or a custom policy that allows uploading files to S3.
+    - Obtain the **AWS Access Key ID** and **AWS Secret Access Key** for the IAM user.
+
+### 2. Configure the Project
+You need to provide your AWS credentials and bucket information to the application. You can do this by modifying the `application.properties` file.
+
+#### 2.1 Open `src/main/resources/application.properties` and configure it as follows:
+
+```properties
+# AWS S3 Configuration
+cloud.aws.credentials.access-key=your-access-key-id
+cloud.aws.credentials.secret-key=your-secret-key
+```
+
+Replace the values with:
+- `your-access-key-id`: Your AWS Access Key.
+- `your-secret-key`: Your AWS Secret Key.
+- `your-region`: The AWS region where your S3 bucket is located (e.g., `us-east-1`).
