@@ -53,6 +53,21 @@ java -jar target/project-name
 - Edit Inbound Rules and allow Custom TCP on port 8080 (or whichever your app uses) from Anywhere (0.0.0.0/0).
 - Obtain the public IP address of your EC2 instance and use it to access your application in a web browser
 
+    
+# Spring Boot AWS S3 File Upload Project
+
+This project demonstrates how to upload files directly to Amazon S3 using a Spring Boot application. The application allows users to upload files through a web interface, and those files are then stored in an S3 bucket.
+
+## Features
+- Upload files directly to AWS S3 from a web interface.
+- Spring Boot integration with AWS SDK.
+- No need to store files locally; files are streamed directly to S3.
+
+## Prerequisites
+- Java 17 (or higher)
+- AWS S3 Account with appropriate permissions
+
+## Project Setup
 ### 1. Set Up AWS S3
 1. **Create an S3 Bucket**:
     - Log in to your [AWS Management Console](https://aws.amazon.com/console/).
@@ -78,3 +93,15 @@ Replace the values with:
 - `your-access-key-id`: Your AWS Access Key.
 - `your-secret-key`: Your AWS Secret Key.
 - `your-region`: The AWS region where your S3 bucket is located (e.g., `us-east-1`).
+
+##### createBucket, deleteBucket, deleteFile, uploadFile
+```properties
+# Get(createBucket)
+http://localhost:8080/s3bucket/add/fist-bucket-vivek
+# Del(deleteBucket)
+http://localhost:8080/s3bucket/delete/bucket/fist-bucket-vivek
+# Del(deleteFile)
+http://localhost:8080/s3bucket/delete/file/fist-bucket-vivek/vivek_singh_bais.pdf
+# Post(uploadFile)
+http://localhost:8080/s3bucket/upload/file/fist-bucket-vivek
+```
