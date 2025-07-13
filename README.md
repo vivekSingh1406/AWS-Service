@@ -54,7 +54,7 @@ java -jar target/project-name
 - Obtain the public IP address of your EC2 instance and use it to access your application in a web browser
 
     
-# Spring Boot AWS S3 File Upload Project
+# Spring Boot AWS-S3 File Upload Project
 
 This project demonstrates how to upload files directly to Amazon S3 using a Spring Boot application. The application allows users to upload files through a web interface, and those files are then stored in an S3 bucket.
 
@@ -106,7 +106,7 @@ http://localhost:8080/s3bucket/delete/file/fist-bucket-vivek/vivek_singh_bais.pd
 http://localhost:8080/s3bucket/upload/file/fist-bucket-vivek
 ```
 
-# Spring Boot AWS RDS database
+# Spring Boot AWS-RDS database
 ##### Create a RDS MySQL instance
 - Use Free Tier
 - Username will be 'admin' and you can set password(you can't use special character)
