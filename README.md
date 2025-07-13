@@ -25,7 +25,7 @@
 
 13. AWS Elastic Beanstalk is a fully managed Platform as a Service (PaaS) that allows developers to deploy and manage applications in the AWS cloud without worrying about the underlying infrastructure.
 
-14. Amazon Route 53 is a highly available and scalable DNS (Domain Name System) web service. It's used to Map(Register) domain names (like www.example.com) to IP addresses
+14. Amazon Route 53 is a highly available and scalable DNS (Domain Name System) web service. It's used to Map(Register) domain names to IP addresses
 
 ## Deploy Spring boot application on EC2
 - Launch EC2 Instance
