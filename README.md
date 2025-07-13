@@ -105,3 +105,17 @@ http://localhost:8080/s3bucket/delete/file/fist-bucket-vivek/vivek_singh_bais.pd
 # Post(uploadFile)
 http://localhost:8080/s3bucket/upload/file/fist-bucket-vivek
 ```
+
+# Spring Boot AWS RDS database
+##### Create a RDS MySQL instance
+- Use Free Tier
+- Username will be 'admin' and you can set password(you can't use special character)
+- Keep the public access to true to access it from local or remote server
+- Create a security group(and allow 3306 from everywhere
+- After creating, you can find endpoint(hostname) to connect to this DB
+  ```
+  url: jdbc:mysql://<rds-endpoint>:3306/<database-name>
+  username: <username>
+  password: <password>
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  ```
