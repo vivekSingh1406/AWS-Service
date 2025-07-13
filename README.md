@@ -1,4 +1,4 @@
-# AWS-Service:- EC2, S3, RDS, IAM, VPC, Lambda, CloudWatch, SNS, SQS, ECS& EKS, Fargate
+# AWS-Service:- EC2, S3, RDS, IAM, VPC, Lambda, CloudWatch, SNS, SQS, ECS& EKS, Fargate, Beanstack, Route 53
 1. Amazon EC2 (Elastic Compute Cloud) is a core AWS service that provides scalable virtual servers in the cloud. It's used to host web applications, backend services, and enterprise software. 
 
 2. Amazon S3 (Simple Storage Service) is a highly durable and scalable object storage service. It's commonly used to store static assets like images, videos, backups, logs, and big data for analytics. Many companies also use S3 to host static websites or implement secure file sharing. 
@@ -23,6 +23,9 @@
 
 12. AWS Fargate is a serverless compute engine for containers that works with both Amazon ECS (Elastic Container Service) and Amazon EKS (Elastic Kubernetes Service). It allows you to run containers without provisioning, configuring, or managing the underlying virtual machines.
 
+13. AWS Elastic Beanstalk is a fully managed Platform as a Service (PaaS) that allows developers to deploy and manage applications in the AWS cloud without worrying about the underlying infrastructure.
+
+14. Amazon Route 53 is a highly available and scalable DNS (Domain Name System) web service. It's used to Map(Register) domain names (like www.example.com) to IP addresses
 
 ## Deploy Spring boot application on EC2
 - Launch EC2 Instance
