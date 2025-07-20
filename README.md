@@ -1,4 +1,4 @@
-# AWS-Service:- EC2, S3, RDS, IAM, VPC, Lambda, CloudWatch, SNS, SQS, ECS& EKS, Fargate
+# AWS-Service:- EC2, S3, RDS, IAM, VPC, Lambda, CloudWatch, SNS, SQS, ECS& EKS, Fargate, Beanstack, Route 53
 1. Amazon EC2 (Elastic Compute Cloud) is a core AWS service that provides scalable virtual servers in the cloud. It's used to host web applications, backend services, and enterprise software. 
 
 2. Amazon S3 (Simple Storage Service) is a highly durable and scalable object storage service. It's commonly used to store static assets like images, videos, backups, logs, and big data for analytics. Many companies also use S3 to host static websites or implement secure file sharing. 
@@ -23,6 +23,9 @@
 
 12. AWS Fargate is a serverless compute engine for containers that works with both Amazon ECS (Elastic Container Service) and Amazon EKS (Elastic Kubernetes Service). It allows you to run containers without provisioning, configuring, or managing the underlying virtual machines.
 
+13. AWS Elastic Beanstalk is a fully managed Platform as a Service (PaaS) that allows developers to deploy and manage applications in the AWS cloud without worrying about the underlying infrastructure.
+
+14. Amazon Route 53 is a highly available and scalable DNS (Domain Name System) web service. It's used to Map(Register) domain names to IP addresses
 
 ## Deploy Spring boot application on EC2
 - Launch EC2 Instance
@@ -54,7 +57,7 @@ java -jar target/project-name
 - Obtain the public IP address of your EC2 instance and use it to access your application in a web browser
 
     
-# Spring Boot AWS S3 File Upload Project
+# Spring Boot AWS-S3 File Upload Project
 
 This project demonstrates how to upload files directly to Amazon S3 using a Spring Boot application. The application allows users to upload files through a web interface, and those files are then stored in an S3 bucket.
 
@@ -105,3 +108,17 @@ http://localhost:8080/s3bucket/delete/file/fist-bucket-vivek/vivek_singh_bais.pd
 # Post(uploadFile)
 http://localhost:8080/s3bucket/upload/file/fist-bucket-vivek
 ```
+
+# Spring Boot AWS-RDS database
+##### Create a RDS MySQL instance
+- Use Free Tier
+- Username will be 'admin' and you can set password(you can't use special character)
+- Keep the public access to true to access it from local or remote server
+- Create a security group(and allow 3306 from everywhere
+- After creating, you can find endpoint(hostname) to connect to this DB
+  ```
+  url: jdbc:mysql://<rds-endpoint>:3306/<database-name>
+  username: <username>
+  password: <password>
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  ```
