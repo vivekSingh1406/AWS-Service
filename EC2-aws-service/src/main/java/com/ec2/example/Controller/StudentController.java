@@ -7,17 +7,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StudentController {
 
-    @GetMapping("/vivek")
+    @GetMapping("/v1")
     public String sayHello(@RequestParam(defaultValue = "siya ram") String name) {
         return "Hello, My " + name + "i am full stack developer";
     }
 
-    @GetMapping("/vikash")
+    @GetMapping("/v2")
     public String sayHello1(@RequestParam(defaultValue = "siya ram") String name) {
         return "Hello, " + name;
     }
 
-    @GetMapping("/kuber")
+    @GetMapping("/v3
+                ")
     public String sayHello2(@RequestParam(defaultValue = "siya ram") String name) {
         return "This is my father";
     }
