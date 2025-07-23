@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StudentController {
 
-    @GetMapping("/hello")
+    @GetMapping
     public String greet(@RequestParam(defaultValue = "Siya Ram") String name) {
         return "Hello, " + name + "! I am a full stack developer.";
     }
