@@ -17,8 +17,7 @@ public class StudentController {
         return "Hello, " + name;
     }
 
-    @GetMapping("/v3
-                ")
+    @GetMapping("/v3")
     public String sayHello2(@RequestParam(defaultValue = "siya ram") String name) {
         return "This is my father";
     }
