@@ -124,7 +124,7 @@ http://localhost:8080/s3bucket/upload/file/fist-bucket-vivek
   ```
 
   
-# publisher and consumer spring boot application
+# Spring Boot SQS Integration: Message Publisher and Consumer
 
 - I have created an SQS queue using the AWS Console by navigating to Amazon SQS and clicking "Create queue."
 - I have developed two Spring Boot applications — one acts as a producer and the other as a consumer.
