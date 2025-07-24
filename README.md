@@ -1,4 +1,4 @@
-# AWS-Service:- EC2, S3, RDS, IAM, VPC, Lambda, CloudWatch, SNS, SQS, ECS& EKS, Fargate, Beanstack, Route 53
+# AWS-Service:- EC2, S3, RDS, IAM, VPC, Lambda, CloudWatch, SNS, SQS, ECS & EKS, Fargate, Beanstack, Route 53
 1. Amazon EC2 (Elastic Compute Cloud) is a core AWS service that provides scalable virtual servers in the cloud. It's used to host web applications, backend services, and enterprise software. 
 
 2. Amazon S3 (Simple Storage Service) is a highly durable and scalable object storage service. It's commonly used to store static assets like images, videos, backups, logs, and big data for analytics. Many companies also use S3 to host static websites or implement secure file sharing. 
