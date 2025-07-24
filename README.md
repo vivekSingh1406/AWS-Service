@@ -122,3 +122,25 @@ http://localhost:8080/s3bucket/upload/file/fist-bucket-vivek
   password: <password>
   driver-class-name: com.mysql.cj.jdbc.Driver
   ```
+
+  
+# publisher and consumer spring boot application
+
+- I have created an SQS queue using the AWS Console by navigating to Amazon SQS and clicking "Create queue."
+- I have developed two Spring Boot applications — one acts as a producer and the other as a consumer.
+- In the producer application, I created an API that accepts key-value JSON data such as:
+  ```
+  {
+    "type" : "deep",
+    "description" : "i am java full stack developer"
+  }
+  ```
+- We are using Spring Scheduler to poll messages from the AWS SQS queue.
+- After pulling a message from the queue, we must handle it properly by acknowledging the message and sending a delete request using the message's receipt handle.
+- If we do not delete the message after processing, it will remain in the queue and may be delivered again, which can lead to message duplication.
+  ```properties
+  
+  app.config.message.queue.topic=my-sqs-queue
+  app.config.aws.access_key_id=YOUR_AWS_ACCESS_KEY
+  app.config.aws.secret_key_id=YOUR_AWS_SECRET_KEY
+  ```
