@@ -1,4 +1,4 @@
-# AWS-Service:- EC2, S3, RDS, IAM, VPC, Lambda, CloudWatch, SNS, SQS, ECS & EKS, Fargate, Beanstack, Route 53
+# AWS-Service:- EC2, S3, RDS, IAM, VPC, Lambda, CloudWatch, SNS, SQS, ECS & EKS, Fargate, Beanstack, Route 53, CloudFront, Api getway
 1. Amazon EC2 (Elastic Compute Cloud) is a core AWS service that provides scalable virtual servers in the cloud. It's used to host web applications, backend services, and enterprise software. 
 
 2. Amazon S3 (Simple Storage Service) is a highly durable and scalable object storage service. It's commonly used to store static assets like images, videos, backups, logs, and big data for analytics. Many companies also use S3 to host static websites or implement secure file sharing. 
@@ -26,6 +26,10 @@
 13. AWS Elastic Beanstalk is a fully managed Platform as a Service (PaaS) that allows developers to deploy and manage applications in the AWS cloud without worrying about the underlying infrastructure.
 
 14. Amazon Route 53 is a highly available and scalable DNS (Domain Name System) web service. It's used to Map(Register) domain names to IP addresses
+
+15. CloudFront is a Content Delivery Network (CDN) service that securely delivers static and dynamic content, including web applications, APIs, videos, and other files, to users globally with low latency and high transfer speeds.
+
+16. API Gateway is a fully managed service that allows developers to create, publish, maintain, monitor, and secure APIs at any scale. It acts as a "front door" for applications to access data, business logic, or functionality from backend services.
 
 ## Deploy Spring boot application on EC2
 - Launch EC2 Instance
