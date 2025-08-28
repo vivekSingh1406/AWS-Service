@@ -3,8 +3,10 @@
   "id": 101,
   "name": "Vivek Singh",
   "email": "vivek.singh@example.com",
+  "description": "i'm full stack developer",
   "age": 28
 }
+
 ```
 
 ```
@@ -69,4 +71,5 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': json.dumps('Successfully processed all records.')
     }
+
 ```
